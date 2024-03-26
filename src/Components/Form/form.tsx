@@ -14,7 +14,7 @@ const Form: React.FC<FormProps> = ({ title, children, onSubmit }) => {
     event.preventDefault();
     if (formRef.current) {
       onSubmit(formRef.current);
-      logFormData(formRef.current); // Stampare i dati del form
+      logFormData(formRef.current);
     }
   };
 
@@ -31,7 +31,6 @@ const Form: React.FC<FormProps> = ({ title, children, onSubmit }) => {
       <fieldset>
         {children}
       </fieldset>
-      <button type="submit">Submit</button>
     </form>
   );
 };
