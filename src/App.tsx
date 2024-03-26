@@ -1,15 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { LoginForm } from './Components/SignIn/login';
-
+import Home from 'Pages/home';
 
 function App() {
   return (
     <>
-      <LoginForm/>
+     <Home/>
     </>
-  );
-}
+  )}
 
 export default App;
