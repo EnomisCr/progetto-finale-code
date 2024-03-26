@@ -1,0 +1,9 @@
+.cartContainer{
+    position: absolute;
+}
+
+.cartCounter{
+    position: relative;
+    left: 2100%;
+    top: 241px;
+}

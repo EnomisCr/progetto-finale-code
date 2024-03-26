@@ -1,48 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProductCard from '../Components/Card/cards';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { LoginForm } from '../Components/SignIn/login';
 import { mockProducts } from 'MockProducts';
+import Navbar from 'Components/Navbar/Navbar';
+import { Product } from 'Types/User';
+import './home.css'
 
 const Home = () => {
-  return (
-    <div className="App">
-      <h1>Final Shop</h1>
+    const [cart, setCart] = useState<Product[]>([])
 
-      <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/users">Users</Link>
-              </li>
-            </ul>
-          </nav>
+    function updateCart(id: Product) {
+        setCart([...cart, id])
+        console.log("cart")
+    }
 
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/loginpage">
-            <LoginForm />
-          </Route>
+    return (
+        <div className="App">
+
+            <div className="cartContainer"><div className="cartCounter">Cart: {cart.length}</div> 
+</div>
+            
+            <Navbar />
+
+            <div className="container-fluid">
+                <div className="row" style={{ marginTop: '20px' }}>
+                    {mockProducts.map((product, index) => (
+                        <ProductCard key={index} product={product} updateCart={updateCart} />
+                    ))}
+                </div>
+            </div>
         </div>
-      </Router>
-
-      <div className="container-fluid">
-        <div className="row" style={{ marginTop: '20px' }}>
-          {mockProducts.map((product, index) => (
-            <ProductCard key={index} product={product} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Home;
