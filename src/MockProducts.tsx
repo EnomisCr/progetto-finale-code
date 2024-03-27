@@ -41,7 +41,7 @@ export const mockProducts: Product[] = [
         title: 'Product 6',
       description: 'Description of Product 6',
       price: 69.99,
-      image: 'https://picsum.photos/id/300/150/150',
+      image: 'https://picsum.photos/id/125/150/150',
     },
     {
       id: 6,

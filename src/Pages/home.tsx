@@ -7,22 +7,20 @@ import Navbar from 'Components/Navbar/Navbar';
 import { Product } from 'Types/User';
 import './home.css'
 
-const Home = () => {
+
+interface ProductCardProps {
+    updateCart: (id: Product) => void;
+
+}
+
+
+const Home: React.FC<ProductCardProps> = ({ updateCart }) => {
     const [cart, setCart] = useState<Product[]>([])
 
-    function updateCart(id: Product) {
-        setCart([...cart, id])
-        console.log("cart")
-    }
+
 
     return (
         <div className="App">
-
-            <div className="cartContainer"><div className="cartCounter">Cart: {cart.length}</div> 
-</div>
-            
-            <Navbar />
-
             <div className="container-fluid">
                 <div className="row" style={{ marginTop: '20px' }}>
                     {mockProducts.map((product, index) => (
