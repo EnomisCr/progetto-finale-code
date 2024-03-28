@@ -1,0 +1,16 @@
+.lgn-btn{
+    margin-top: 15px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 5px 0px #606060bc;
+
+}
+
+.lgn-btn:hover{
+    background-color: #ffffff;
+}
+
+:not(.btn-check) + .btn.lgn-btn:active{
+    background-color: #ffffff;
+    border-color: transparent;
+    box-shadow: inset 2px 3px 5px 0px #606060bc;
+}
