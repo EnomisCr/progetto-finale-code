@@ -48,9 +48,9 @@ const Navbar: React.FC = () => {
 
             <Router>
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <div className="container">
-                            <ul className='nav-voices mb-2 mb-lg-0 col-3'>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+                        <div className="container-fluid ">
+                            <ul className='nav-voices mb-2 mb-lg-0 col-3 justify-content-between ' >
                                 <li>
                                     <Link to="/">Home</Link>
                                 </li>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Product } from '../../Types/User'
 import {Button} from '../Button/button';
+import '../Card/card.css'
 
 
 
@@ -28,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, updateCart }) => {
 
 
   return (
-    <div className="card col-4" style={{ width: '18rem' }}>
+    <div className="card col-sm-12 col-xl-3" style={{ width: '18rem' }}>
       <img src={product.image} className="card-img-top" alt={product.title} />
       <div className="card-body">
         <h5 className="card-title">{product.title}</h5>
