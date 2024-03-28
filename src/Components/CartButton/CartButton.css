@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+}
+
+.cart-btn{
+    padding: 10px;
+    border: none !important;
+    background-color: #ffffff00 !important;
+    color: #000000 !important;
+}
+
+.cart-btn:hover{
+    background-color: #dddddd !important;
+
+}
+
+.cart-btn:active{
+    background-color: #9f9f9f !important;
+    border: none !important;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
+  }
+  
+
+  .animation:hover{
+    animation: shake 0.5s;
+  }
+
+  .counter{
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    background-color: #d80000;
+    color: #ffffff;
+    position: absolute;
+    top:17px;
+    right: 87px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .counter.hidden {
+    opacity: 0;
+  }

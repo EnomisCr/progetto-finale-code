@@ -1,5 +1,7 @@
-export interface User {
-    id: number;
-    username: string;
-    password: string;
-  }
+export type Product = {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+};

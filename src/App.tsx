@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { LoginForm } from './Components/SignIn/login';
+import Home from 'Pages/home';
+import CartButton from 'Components/CartButton/CartButton';
+import Navbar from 'Components/Navbar/Navbar';
 
 
 function App() {
   return (
     <>
-      <LoginForm/>
+    <Navbar />
+     
+     {/* <CartButton/> */}
     </>
-  );
-}
+  )}
 
 export default App;

@@ -1,0 +1,95 @@
+
+.nav-voices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.nav-voices li {
+    
+    font-size: 1.5rem;
+    list-style-type:none;
+}
+.nav-voices a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-voices a:hover {
+    color: rgb(68, 91, 216);
+    text-decoration: none;
+}
+
+i {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding: 2rem;
+}
+
+
+.cart-btn-pos{
+    display: flex;
+    justify-content: end;
+}
+
+.cart-tot-img{
+    width: 15%;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.title{
+    text-align: center;
+}
+
+.cart-prd-style{
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+
+.cart-tot-price{
+    margin: 0;
+}
+
+.cart-tot-title{
+    margin: 0;
+}
+
+.remove-button{
+    color: #d80000 !important;
+    border: none !important;
+}
+
+.remove-button:active{
+    color: #900000 !important;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .remove-button:hover {
+    animation: bounce 1s ;
+  }
+
+  .offcanvas-body{
+    background-color: #f0f0f0 !important;
+  }
+
+ 
