@@ -65,21 +65,9 @@ const Navbar: React.FC = () => {
                             </ul>
                             <h1 className='title col-6'>Final Shop</h1>
                             <div className="cart-btn-pos col-3"><CartButton cartItems={cart} /></div>
-                            {/* <div className="position-relative d-flex align-items-center">
-                                {cartItems.length > 0 && (
-                                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                        {cartItems.length}
-                                    </span>
-                                )}
-                            </div> */}
+
                         </div>
-                        {/* <button className="btn btn-primary" onClick={addToCart}>Aggiungi al Carrello</button> */}
-                        {/* <div className="sidebar">
-                            {cart}
-                        <span>Total</span>
-                        
-                        
-                        </div> */}
+
                     </nav>
                     <Routes>
                         <Route path="/" element={<Home updateCart={updateCart} />} />
